@@ -12,7 +12,7 @@ Esta guía asume que tú estás usando, al menos, la versión `0.5` de Neovim.
 
 ### Aprendiendo Lua.
 
-Si tu no estas familiarizado con este lenguaje, hay un varios recursos para empezar:
+Si tú no estas familiarizado con este lenguaje, hay un varios recursos para empezar:
 
 - [Aprende X en Y minutes, una pagina sobre Lua](https://learnxinyminutes.com/docs/lua/) debería darte una vision general de los conceptos básicos.
 - [Esta guia](https://github.com/medwatt/Notes/blob/main/Lua/Lua_Quick_Guide.ipynb) tambien es un buen recurso para empezar rápidamente
@@ -78,7 +78,7 @@ Los módulos de Lua se encuentran dentro de la carpeta `Lua/` en tu `'runtimepat
 de usuarios, esto significa `~/.config/nvim/lua` en sistemas \*nix y `~/AppData/Local/nvim/lua` en Windows). 
 Los paquetes globales `package.path` y `package.cpath` se ajustan automáticamente para incluir los archivos 
 Lua en esta carpeta. Esto significa que pueda que debas hacer un `require()` en estos archivos como
-modulos de Lua.
+módulos de Lua.
 
 Tomemos como ejemplo esta estructura de carpetas:
 
@@ -945,7 +945,7 @@ La API de sintaxis es todavía un trabajo en progreso. Aquí hay un par de indic
 ## Tips generales y recomendaciones
 
 
-### Recargando los modulos de caches
+### Recargando los módulos de caches
 
 En Lua, la función `require()` almacena en caché los módulos. Esto es bueno para el rendimiento,
 pero puede hacer que el trabajo con los plugins sea un poco engorroso porque los módulos no se 
