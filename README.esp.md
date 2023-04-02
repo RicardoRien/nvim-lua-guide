@@ -145,7 +145,7 @@ Si dos plugins diferentes tienen un archivo `lua/main.lua`, entonces hacer `requ
 ¿qué archivo queremos obtener?
 
 
-Podría ser una buena idea para el espaciar los nombres de tu configuración o tu plugin con una carpeta 
+Una buena idea seria diferenciar los nombres de tu configuración o plugin con una carpeta 
 de nivel superior, así: `lua/nombre_del_plugin/main.lua`
 
 
