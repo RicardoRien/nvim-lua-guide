@@ -4,22 +4,23 @@
 
 La [integración de Lua](https://www.youtube.com/watch?v=IP3J56sKtn0) como [lenguaje de primera clase 
 dentro de Neovim](https://github.com/neovim/neovim/wiki/FAQ#why-embed-lua-instead-of-x) se perfila como una de sus características más destacadas. Sin embargo, la cantidad 
-de material didactico para aprender a escribir plugins en Lua no es tan grande como la que se puede 
+de material didáctico para aprender a escribir plugins en Lua no es tan grande como la que se puede 
 encontrar para escribirlos en Vimscript. Esta guia es un intento de proveer información básica a 
 las personas para que puedan empezar.
+
 
 Esta guia asume que estás usando, al menos, la version 0.5 de Neovim.
 
 ### Aprendiendo Lua.
 
-Si tu no estas familiarizado con este lenguaje, hay un varios recursos para empezar:
+Si tú no estas familiarizado con este lenguaje, hay un varios recursos para empezar:
 
 - [Aprende X en Y minutes, una pagina sobre Lua](https://learnxinyminutes.com/docs/lua/) debería darte una vision general de los conceptos básicos.
-- [Esta guia](https://github.com/medwatt/Notes/blob/main/Lua/Lua_Quick_Guide.ipynb) tambien es un buen recurso para empezar rapidamente
-- Si aprender mediante videos es más de tu agrado, Derek Banas tiene un [tutorial de
+- [Esta guia](https://github.com/medwatt/Notes/blob/main/Lua/Lua_Quick_Guide.ipynb) tambien es un buen recurso para empezar rápidamente
+- Si aprender mediante vídeos es más de tu agrado, Derek Banas tiene un [tutorial de
   1-hora sobre el lenguaje](https://www.youtube.com/watch?v=iMacxZQMPXs)
 - ¿Deseas algo más interactivo con ejemplos ejecutables? intenta [The LuaScript tutorial](https://www.luascript.dev/learn)
-- La [lua-users wiki](http://lua-users.org/wiki/LuaDirectory) está llena de información de todo tipo referente a topicos de Lua.
+- La [lua-users wiki](http://lua-users.org/wiki/LuaDirectory) está llena de información de todo tipo referente a tópicos de Lua.
 - La [official reference manual for Lua](https://www.lua.org/manual/5.1/) debería darte el tourt más amigable sobre este lenguaje 
   (existe como Vicdoc plugin si quiere leerlo desde la comodidad de tu editor: [wsdjeg/luarefvim](https://github.com/wsdjeg/luarefvim))
 
@@ -36,7 +37,7 @@ con Lua 5.1
 ### Tutoriales existentes para escribir Lua en Neovim
 
 Ya se han escrito algunos tutoriales para ayudar a la gente a escribir plugins en Lua. Algunos de 
-ellos han ayudado muchisimo a la hora de escribir esta guía. Muchas gracias a sus autores.
+ellos han ayudado muchísimo a la hora de escribir esta guía. Muchas gracias a sus autores.
 
 
 - [teukka.tech - From init.vim to init.lua](https://teukka.tech/luanvim.html)
@@ -72,13 +73,13 @@ no están 100% soportadas por Lua todavía.
 También ve:
 - `:help config`
 
-### Modulos
+### Módulos
 
-Los modulos de Lua se encuentran dentro de la carpeta `Lua/` en tu `'runtimepath'` (para la mayoria 
+Los módulos de Lua se encuentran dentro de la carpeta `Lua/` en tu `'runtimepath'` (para la mayoria 
 de usuarios, esto significa `~/.config/nvim/lua` en sistemas \*nix y `~/AppData/Local/nvim/lua` en Windows). 
 Los paquetes globales `package.path` y `package.cpath` se ajustan automáticamente para incluir los archivos 
 Lua en esta carpeta. Esto significa que pueda que debas hacer un `require()` en estos archivos como
-modulos de Lua.
+módulos de Lua.
 
 Tomemos como ejemplo esta estructura de carpetas:
 
@@ -145,7 +146,7 @@ Si dos plugins diferentes tienen un archivo `lua/main.lua`, entonces hacer `requ
 ¿qué archivo queremos obtener?
 
 
-Podría ser una buena idea para el espaciar los nombres de tu configuración o tu plugin con una carpeta 
+Una buena idea seria diferenciar los nombres de tu configuración o plugin con una carpeta 
 de nivel superior, así: `lua/nombre_del_plugin/main.lua`
 
 
@@ -726,7 +727,7 @@ Para eliminar una de estas variables, simplemente asigna `nil` a la misma:
 vim.g.some_global_variable = nil
 ```
 
-See also:
+También ve:
 - `:help lua-vim-variables`
 
 #### Precaución
@@ -945,7 +946,7 @@ La API de sintaxis es todavía un trabajo en progreso. Aquí hay un par de indic
 ## Tips generales y recomendaciones
 
 
-### Recargando los modulos de caches
+### Recargando los módulos de caches
 
 En Lua, la función `require()` almacena en caché los módulos. Esto es bueno para el rendimiento,
 pero puede hacer que el trabajo con los plugins sea un poco engorroso porque los módulos no se 
