@@ -8,7 +8,7 @@ de material didactico para aprender a escribir plugins en Lua no es tan grande c
 encontrar para escribirlos en Vimscript. Esta guia es un intento de proveer información básica a 
 las personas para que puedan empezar.
 
-Esta guia asume que tu estás usando, al menos, la version 0.5 de Neovim.
+Esta guia asume que estás usando, al menos, la version 0.5 de Neovim.
 
 ### Aprendiendo Lua.
 
