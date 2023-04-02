@@ -726,7 +726,7 @@ Para eliminar una de estas variables, simplemente asigna `nil` a la misma:
 vim.g.some_global_variable = nil
 ```
 
-See also:
+También ve:
 - `:help lua-vim-variables`
 
 #### Precaución
